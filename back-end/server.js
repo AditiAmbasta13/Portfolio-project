@@ -6,7 +6,13 @@ dotenv.config();
 
 const cors = require("cors");
 
-app.use(cors());
+app.use(cors(
+    {
+        origin : ["https://portfolio-project-frontend-phi.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 const userRoute = require("./routes/userRoute");
 
