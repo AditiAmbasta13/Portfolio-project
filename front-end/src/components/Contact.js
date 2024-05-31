@@ -14,16 +14,26 @@ const Contact = () => {
 
     const handleSubmit = async (e)=> {
         e.preventDefault();
-
+        
         const addUser = { fname, lname, email, pno, msg };
         console.log(addUser);
-        const response = await fetch("http://localhost:5000/", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(addUser),
+
+      await fetch("https://portfolio-project-api-two.vercel.app/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(addUser),
         });
+
+        const response = await fetch("http://localhost:5000/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(addUser),
+        });
+      
         const result = await response.json();
         if (!response.ok) {
             console.log("error",result.error);
