@@ -153,23 +153,24 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 
 .nav-items-button {
-  color: #fff;
   font-weight: 700;
-  background-color: none;
-  border: 1px solid #fff;
+  color: #000;
+  background-color: #151515;
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 5px;
   border-radius: 0;
+  border: 1px solid white;
   position: relative;
   transition: 0.3s ease-in-out;
 }
-.nav-items-button span {
+.nav-items-button span{
   z-index: 1;
   position: relative;
 }
 .nav-items-button span:hover {
-  color: #121212;
+  color: #000;
+  z-index: 9999;
 }
 .nav-items-button::before {
   content: "";
@@ -185,6 +186,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .nav-items-button:hover::before {
   width: 100%;
 }
+
 
 .ham-icon {
   display: none;
@@ -383,25 +385,40 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  margin-bottom: 30px;
 }
 
-.skill p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px 0 75px 0;
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+.skills-grid .item {
+  flex: 1 1 calc(33.333% - 40px); /* 3 items per row */
+  max-width: calc(33.333% - 40px);
+  text-align: center;
 }
 
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+.skills-grid .item img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .skills-grid .item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row on tablet */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid .item {
+    flex: 1 1 100%; /* 1 item per row on mobile */
+    max-width: 100%;
+  }
 }
 
 .background-image-left {
@@ -423,13 +440,14 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  margin-bottom: 40px;
 }
 .project p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin: 10px auto 10px auto;
   text-align: center;
   width: 56%;
 }
@@ -443,6 +461,15 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   overflow: hidden;
   display: flex;
   text-align: center;
+}
+
+.link-proj{
+  color: #dbd9d9;
+  font-size: 18px;
+}
+
+.link-proj:hover{
+  color: blue;
 }
 
 .tab-item {
@@ -558,6 +585,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   right: 0;
   z-index: 1;
 }
+
 
 /* Contact */
 .contact {

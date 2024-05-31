@@ -38,7 +38,7 @@ const Navigaton = () => {
                 <li className='nav-ele'><a href="#skills" className={activeLink === 'skills' ? 'active nav-ele' : 'nav-ele'} onClick={() => onUpdateActiveLink('skills')}>Skills</a></li>
                 <li className='nav-ele'><a href="#projects" className={activeLink === 'projects' ? 'active nav-ele' : 'nav-ele'} onClick={() => onUpdateActiveLink('projects')}>Projects</a></li>
                 <li className='social-icon'>
-                    <a href="#">
+                    <a href="https://github.com/AditiAmbasta13">
                         <GitHubIcon className='nav-icon' sx={{fontSize:"42px", border:"1px solid rgba(255, 255, 255, 0.5)", padding:"5px", borderRadius:"50%"}}/>
                     </a>
                 </li>
