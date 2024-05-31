@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 
 const Contact = () => {
-  const [fname, setFname] = useState("");
-  const [lname, setLname] = useState("");
+    const [fname, setFname] = useState("");
+    const [lname, setLname] = useState("");
     const [email, setEmail] = useState("");
     const [pno, setPno] = useState();
     const [msg, setMsg] = useState("");
@@ -55,7 +55,7 @@ const Contact = () => {
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={fname} placeholder="First Name" onChange={(e) => {
                         setFname(e.target.value)
-                    }} />
+                    }} /> 
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={lname} placeholder="Last Name" onChange={(e) => {

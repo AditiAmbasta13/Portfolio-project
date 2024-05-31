@@ -17,12 +17,6 @@ const Banner = () => {
     typeSpeed: 300
   })
 
-  const connectRef = useRef();
-
-  const ContactMe = () => {
-    
-  }
-
   return (
     <div className="banner" id="home">
         {/* <Lottie className="banner-bg" animationData={herobg}/> */}
@@ -35,7 +29,7 @@ const Banner = () => {
                 <span>{text}</span> 
                 <Cursor className="cursor"/>
               </h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p>Hello there! I'm Aditi Ambasta, a passionate second-year engineering student pursuing B.Tech in Artificial Intelligence and Data Science. My academic journey is fueled by a deep-seated enthusiasm for creativity, innovation, and continuous learning.</p>
               <a className="banner-connect" href='#connect'>Let's Connect &nbsp;<ArrowRightCircle size={25} /></a>
             </div>
             <div className='head-img'>

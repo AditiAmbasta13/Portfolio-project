@@ -15,7 +15,6 @@
 	font-weight: 100;
 }
 
-/************ Default Css ************/
 * {
   margin: 0;
   padding: 0;
@@ -342,6 +341,10 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   .banner-text {
     top: 15vh;
     left: 15vw;
+  }
+  .banner p {
+    font-size: 14px;
+    width: 100vw;
   }
   .headimg {
     display: none;
