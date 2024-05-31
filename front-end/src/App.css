@@ -1,3 +1,4 @@
+
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
@@ -365,6 +366,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   }
 }
 
+
 /* skills */
 
 .skill {
@@ -385,40 +387,25 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
-  margin-bottom: 30px;
 }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.skill p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
 
-.skills-grid .item {
-  flex: 1 1 calc(33.333% - 40px); /* 3 items per row */
-  max-width: calc(33.333% - 40px);
-  text-align: center;
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
 
-.skills-grid .item img {
-  max-width: 30%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 1024px) {
-  .skills-grid .item {
-    flex: 1 1 calc(50% - 20px); /* 2 items per row on tablet */
-    max-width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 768px) {
-  .skills-grid .item {
-    flex: 1 1 100%; /* 1 item per row on mobile */
-    max-width: 100%;
-  }
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
 }
 
 .background-image-left {
