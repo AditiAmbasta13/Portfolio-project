@@ -10,6 +10,9 @@ import projImg6 from "../assets/img/project-6-img.png";
 import projImg7 from "../assets/img/new-proj-1.jpg";
 import projImg8 from "../assets/img/new-proj-2.jpg";
 import projImg9 from "../assets/img/new-proj-3.jpg";
+import projImg10 from "../assets/img/project-7-img.png";
+import projImg11 from "../assets/img/project-8-img.png";
+import projImg12 from "../assets/img/project-9-img.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 const Project = () => {
@@ -20,6 +23,12 @@ const Project = () => {
     };
 
     const projects = [
+      {
+        title: "Urify Finance",
+        description: "Finance Website",
+        imgUrl: projImg10,
+        link: "https://github.com/AditiAmbasta13/Urify-Finance?tab=readme-ov-file"
+    },
       {
         title: "Artify",
         description: "Edutainment Website",
@@ -33,10 +42,10 @@ const Project = () => {
         link: "https://www.figma.com/design/joPPd3LUsHDg7yWnI78MUg/Infomatrix-full-website?node-id=407-2&t=cEvI9qdzc55qsspz-1"
     },
       {
-        title: "Movie Recommender",
-        description: "ML project",
-        imgUrl: projImg9,
-        link: "https://github.com/Aditi-Ambasta/Movie-Recommender"
+        title: "Krishak Saathi",
+        description: "Empowering Farmers",
+        imgUrl: projImg12,
+        link: "https://github.com/sameer240704/Agriculture_Management_System"
     },
       {
         title: "Personal Portfolio",
@@ -44,33 +53,11 @@ const Project = () => {
         imgUrl: projImg1,
         link: "https://github.com/AditiAmbasta13/Portfolio-project"
     },
-    {
-        title: "Event Management System",
-        description: "Python x DBMS Project",
-        imgUrl: projImg2,
-        link: "https://github.com/Aditi-Ambasta/Event-Management-System"
-    },
-    {
-        title: "Bucket-List App",
-        description: "JavaScript Project",
-        imgUrl: projImg3,
-    },
-    {
-        title: "Music-Player",
-        description: "Python Project",
-        imgUrl: projImg4,
-        link: "https://github.com/Aditi-Ambasta/Music-Player"
-    },
-    {
-        title: "Meme-generator",
-        description: "Javascript Project",
-        imgUrl: projImg5,
-    },
-    {
-        title: "Movie streaming Website",
-        description: "Javascript Project",
-        imgUrl: projImg6,
-        link: "https://github.com/Aditi-Ambasta/js-project"
+      {
+        title: "Multi-Class-Prediction-of-Obesity-Risk",
+        description: "ML project",
+        imgUrl: projImg11,
+        link: "https://github.com/Springboard-Internship-2024/Multi-Class-Prediction-of-Obesity-Risk_May_2024/tree/Aditi-Ambasta"
     },
     ];
 
